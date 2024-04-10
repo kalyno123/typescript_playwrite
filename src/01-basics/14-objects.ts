@@ -54,6 +54,28 @@ for (const key in person10){
     //keyof is an indexed type query operator in typescipt. it is used to obtain the union type of keys (property name) frm given type.
 }
 
-const teacher = {
 
-}
+const teacher: {
+    fname: string,
+    lname: string,
+    major: string,
+    fullname: () => string,
+    info: () => void
+} = {
+    fname: 'Adam',
+    lname: 'Smith',
+    major: 'Economics',
+    // fullname: function () {
+    //     return `${this.fname} ${this.lname}`;
+    // },
+    fullname(): string {
+        return `${this.fname} ${this.lname}`;
+    },
+    info(): void {
+        console.log(`${this.fullname} is well-known person for ${this.major}.`);
+    }
+};
+
+
+console.log(teacher.fullname()); // 'Adam Smith'
+teacher.info();

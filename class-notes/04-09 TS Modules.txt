@@ -1,0 +1,17 @@
+
+
+import java.util.*;
+import 
+
+
+Modules: exporting/importing classes, functions, and properties from one file to another to increase the reusability
+
+1. Before ES6 -> CommonJS Modules 
+    export and require 
+
+    This is mostly used for Node.js server side apps
+
+2. After ES6 -> ES6 Modules 
+    export and import
+
+    Browsers
