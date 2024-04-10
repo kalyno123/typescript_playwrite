@@ -7,7 +7,7 @@ import
 Modules: exporting/importing classes, functions, and properties from one file to another to increase the reusability
 
 1. Before ES6 -> CommonJS Modules 
-    export and require 
+    module.exports and require 
 
     This is mostly used for Node.js server side apps
 
@@ -15,3 +15,9 @@ Modules: exporting/importing classes, functions, and properties from one file to
     export and import
 
     Browsers
+
+
+JS/TS is asynchronous by default
+1. go to url 3 seconds
+2. click on element 2 seconds
+3. validate text 1 second
