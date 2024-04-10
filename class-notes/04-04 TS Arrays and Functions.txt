@@ -1,0 +1,45 @@
+
+
+
+return function: returns some data
+void function: does not return anything but executes a task
+
+
+METHODS in JAVA
+int sum(int num1, int num2) {
+    return num1 + num2;
+}
+
+
+void sayHi(name) {
+    System.out.println("Hi " + name + "!");
+}
+
+
+IIFE: A function invoking itself just once whenever program reaches to it. 
+It cannot be executed explicitly as it does not have a name to invoke.
+
+
+function funcA(callbackFunction: (): void): void {
+    // block of code
+}
+
+function funcB (): void {
+    // block of code
+}
+
+funcA(funcB);
+
+funcA is the higher order function 
+funcB is the callback function
+
+
+forEach() -> use it when you do not return anything but execute a function for each element in the array
+map() -> use it if you will modify and return each array element with a function
+filter ->  use it when you will check all the array elements which passes a test and store them in a new array
+
+
+
+map = same size
+filter = usually a smaller 
+reduce = single value

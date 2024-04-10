@@ -1,0 +1,25 @@
+
+[JavaScript Data Types NOTES]
+
+Duplication of lines 
+MAC: option + shift + arrow (up or down)
+Windows: alt + shift + arrow (up or down)
+
+Primitives: number, string, boolean, null, undefined, symbol, bigint
+
+Reference Types: Objects, Arrays, Functions, Date, Math, Map, Set
+
+*** undefined is the value of a variable that declared but not assigned with any value.
+*** null is explicitly state absence of info-data
+The typeof operator will return object for null 
+
+*TypeScript has exactly same types and couple more types
+** any type does not exist in JavaScript, it is unique to TypeScript 
+** Union types and literal types are also belong to TypeScript only. 
+
+use 'let' when you know you'll be reassigning often (changing varible's value)
+use 'const' when you know you wont need to reassign as 'const' makes the variable final (cannot be changed once in)
+
+block scope -- can declare 'let' and 'const' global varibles to use in and out of of code block
+
+

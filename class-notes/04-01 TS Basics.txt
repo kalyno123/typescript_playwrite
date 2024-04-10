@@ -1,0 +1,126 @@
+TypeScript vs JavaScript
+-TypeScript is superset of JavaScript
+-It adds type-safety to JavaScript
+-JS is dynamically typed while TS is statically typed like other compiled languages (Java, C#)
+-TS cannot be executed without converting to JS code.
+-We use tsc command to compile TS code into JS code 
+
+TS source code -> tsc -> JS code -> This can be executed 
+
+
+var-let-const keywords
+-All these keywords are used to declare variables
+-var is hoisted while let and const cannot be hoisted
+    HOISTING: it is moving the declaration to the top of the file 
+-var used to be the keyword used before ES6 (ES2015)
+    ES6: Revolutionary release for JS 
+        let, const 
+        arrow functions 
+        classes 
+        for...of
+        promises, async-await
+        array features
+        object features and many more features   
+-let and const are ES6 features 
+    let can be reassigned
+    const cannot be reassigned (final)
+
+-var does not support block-scope while let and const supports block-scope 
+
+// GLOBAL SCOPE
+var flag: boolean = true;
+
+console.log(flag); // true
+
+if(flag) {
+    // do smth
+    console.log(flag); // true
+}
+else {
+    // do smth else
+}
+
+
+//BLOCK SCOPE
+if(true) {
+    let fName: string = 'John';
+}
+else {
+    const lName: string = 'Doe';
+}
+
+console.log(fName + lName); // Error
+
+var fName: string = 'John';
+let age: number = 25;
+const flag: boolean = true;
+
+
+
+
+Data-Types in JS
+Primitives: number (64 bit), string, boolean, null, undefined, symbol, bigint
+Reference Types: Arrays, Objects, Maps, Sets, Dates, Math...
+
+
+Simple Types in TS
+let age: number = 25;
+let word: string = 'Hello';
+let b1: boolean = true;
+let n1: null = null;
+let u1: undefined; // it is undefined by default
+
+
+ANY TYPE 
+let age: any = 25;
+
+age = 'Hello'; // Error
+age = true;
+age = null;
+
+UNION TYPE 
+let price: number | string = 10.99;
+
+price = '13.59'; // allowed 
+price = true; // ERROR
+
+
+LITERAL TYPES 
+let exam_result: 'PASS' | 'FAIL';
+
+exam_result = 'PASS'; // allowed 
+exam_result = 'FAIL'; // allowed 
+
+exam_result = 'pass'; // Error
+
+let digit: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+
+digit = 5; // allowed 
+digit = 9; // allowed
+
+digit = 11; // Error
+
+
+src vs dist folders 
+
+
+tsconfig.json: modify all the compiler options for our TS Code and files
+Example: "outDir": "./dist" 
+
+With this key-value pair, we specified that the compiled TS files should be stored in the
+dist folder
+
+
+COMPARISON IN JS vs TS 
+JavaScript 
+==      -> used for lose comparison and checks only if the values are equal 
+===     -> used for strict comparison and check if both values and data types are equal
+
+!=      -> used for lose comparison and checks only if the values are not equal
+!==     -> used for strict comparison and check if whether values or data types are not equal
+
+
+
+Math.random(); 
+0.000000000000000001 to 0.9999999999999999999
+0.348756384765389745934

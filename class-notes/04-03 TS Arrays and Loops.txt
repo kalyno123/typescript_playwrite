@@ -1,0 +1,27 @@
+
+
+JAVA ARRAYS: Cannot be resized, you cannot add or remove elements
+Once you declare the Java Array, you cannot change the size 
+
+
+JS and TS: Array is mutable, meaning you can add, remove elements and change the size.
+
+
+How do you make sure a variable is an array in JS/TS?
+- isArray() method
+
+
+Adding elements - returns the new size
+push() -> adds to the end 
+unshift() -> adds to the start 
+
+Removing elements - returns the removed elements
+pop() -> removes the last element 
+shift() -> removes the first element
+
+
+Spread Operator (...)
+-It is an ES6 feature
+-Used to spread array elements as individual arguments to an method or to another array
+    - The spread operator is a feature in JavaScript that allows us to expand elements of an 
+    iterable (like an array or string) or object properties into places where multiple elements or properties are expected.

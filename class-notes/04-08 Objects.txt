@@ -1,0 +1,18 @@
+Objects are collections of properties. They are also variables at the same time.
+Property: key-value pair
+All keys are converted to strings (except symbols).
+
+
+JS Objects
+const student1 = {
+    fname: "John", // instance variable - attributes
+    lname: "Doe",
+    age: 25
+};
+
+TS Objects
+const student1 = {
+    fname: "John",
+    lname: "Doe",
+    age: 25
+};
