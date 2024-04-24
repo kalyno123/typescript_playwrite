@@ -1,0 +1,60 @@
+
+
+Type Alias - Interfaces - Classes 
+-They are all used as blueprints or templates from which we can create many objects.
+-JavaScript does not provide Type Alias and Interfaces still
+-JavaScript added classes with ES6 release in 2015
+-JavaScript was only using prototypes before ES6 
+
+Interfaces and Classes are common in compiled languages like Java, C# 
+Type Alias are only used in TS 
+
+JavaScript has classes and it is added with ES6 but not Type Aliases and Interfaces 
+TypeScript have all 3.
+
+
+Interface:
+-Cannot be instantiated 
+-One interface can inherit another one or multiple interfaces using extends keyword 
+-Properties are public by default 
+
+
+Class:
+-blueprints from which we can create many objects using new keyword (instantiation)
+-class have constructor: special kind of method used to create objects 
+-class have functions (public, protected, private)
+-class have properties (public, protected, private)
+-class can have also static functions and properties which can be called with the class name
+-class can have constants (final)
+-class can be extended
+    A CHILD CLASS CAN EXTEND TO ONE PARENT CLASS ONLY BUT CAN IMPLEMENT MULTIPLE INTERFACES 
+    A PARENT CLASS CAN BE EXTENDED BY MANY CHILD CLASSES 
+-abstract classes which can have abstract methods: no implementation
+
+
+
+JAVA CLASS
+class Animal {
+    Animal() {}
+}
+
+// Instantiation with new keyword and constructor
+Animal a1 = new Animal();
+
+
+
+    year: number;
+    make: string;
+    model: string;
+    color: string;
+    price: number;
+
+    constructor(year: number, make: string, model: string, color: string, price: number) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.price = price;
+    }
+
+    

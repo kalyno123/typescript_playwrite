@@ -5,6 +5,14 @@ import
 
 
 Modules: exporting/importing classes, functions, and properties from one file to another to increase the reusability
+Modules exported needs to be imported by called the js file related to the ts file to be imported 
+
+EX: export class Invoice{
+
+}
+// in another file 
+import {} from './path to exported file.js' --> ex: './classes/Invoice.js' even if exporting ts file should import the js file
+--> inside {} you pass what you what to import from that path ex: {Invoice}
 
 1. Before ES6 -> CommonJS Modules 
     module.exports and require 

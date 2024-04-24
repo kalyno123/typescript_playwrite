@@ -1,0 +1,56 @@
+
+3.08 seconds
+3. Text validated
+2. Element clicked and new page is loaded
+1. URL visited
+
+
+1. Solution with callbacks
+6.09 seconds
+1. URL visited
+2. Element clicked and new page is loaded
+3. Text validated
+
+
+2. Solution with promises using then() and catch() blocks
+
+PROMISES have 3 states
+1. Pending
+2. Fullfilled
+3. Rejected 
+
+            PROMISE 
+            Pending 
+    Rejected        Fulfilled 
+
+
+3. Solution with async-await keywords
+-async used for function
+-await used for all the asynchronous code within the async function block 
+-await cannot be used without async. In other way, await keyword is allowed only within async functions.
+-await is redundant to use in front of a function if the function is not returning a promise
+
+
+function suite {
+    beforeAll() {
+
+    }
+
+    beforeEach() {
+
+    }
+
+    test1() {
+
+    }
+
+    test2() {
+
+    }
+    
+    test3() {
+
+    }
+}
+
+
